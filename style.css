@@ -1,0 +1,157 @@
+/*General*/
+body{
+    margin:0;
+    padding:0;
+    background-color: #cceeff;
+    font-family: 'Space Mono', monospace;
+}
+.banner h1{
+    color:#fff;
+    padding-top:150px;
+    text-align: center;
+}
+/*Navbar*/
+nav{
+    display:flex;
+    background-color:#66a3ff;
+    border-bottom: 3px solid #0066ff;
+}
+nav img{
+    margin-left: 100px;
+}
+nav p{
+    font-size: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    margin-left: 250px;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 30px;
+}
+i{
+    font-size: 30px;
+}
+hr{
+    background-color:lightgrey;
+    width: 90%;
+}
+/*Section banner*/
+.banner{
+    background-image: url("images/city.jpg");
+    height:500px;    
+}
+/*Section news*/
+
+#news{
+    display: flex;
+    justify-content: space-evenly;
+}
+.articles {
+    width: 75%;
+    margin:0 70px;
+    
+}
+.card{
+    text-align: center;
+    padding:20px;
+    margin:15px;
+    background-color: white;
+}
+.oneComment{
+    margin-left: 50px;
+}
+.oneText{
+    padding-left: 80px;
+}
+.authorBold{
+    font-weight: bold;
+}
+.fakeimg {
+    background-color: #aaa;    
+    padding: 20px;
+  }
+
+
+.spaceCake{
+      height: 303px;
+      background-image: url("images/spaceCake.jpg");
+      text-align: center;     
+  }
+.aside{
+    width: 25%;
+    margin-right: 70px;      
+    padding: 20px;
+    margin-top: 20px;
+}
+.button{
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: orange;
+    font-size: 16px;
+    margin-top:30px;
+    padding:10px;
+    width: 30% !important;
+}
+
+[id^= "card"]{
+    background-color: white;
+    width: 90%;;
+    padding: 20px;
+    margin-top: 20px;
+}
+[id^="btn"]{
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+/*Formulaire de login*/
+.loginForm{
+    text-align: center;
+    margin-top:0px;
+}
+#ex1{
+    background-color: #fff;
+    font-size: medium;
+    padding: 30px 30px;
+}
+#login{
+    margin-top:15px;
+}
+#ex1 input{
+    width: 70%;
+    padding:5px;
+}
+#button{
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: orange;
+    font-size: 16px;
+    margin-top:30px;
+    margin-left: 150px;
+    width: 30% !important;
+}
+/*Formulaire de commentaire*/
+[id^="response"]{
+    font-size: medium;
+    padding: 30px 30px;
+}
+[id^="response"] input{
+    display: block;
+}
+/*Footer*/
+
+footer{
+    background-color: #66a3ff;
+    height: 5%;
+    padding: 20px;
+    text-align: center;    
+    margin-top: 20px;
+ }

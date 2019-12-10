@@ -1,0 +1,13 @@
+[
+    {
+        "email": "valgritim@gmail.com",
+        "mdp": "Gribouille",
+        "role": 3
+    },
+    {
+        "email": "valerie@gmail.com",
+        "mdp": "Timy",
+        "role": 1
+    }
+
+]

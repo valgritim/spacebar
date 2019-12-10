@@ -1,0 +1,41 @@
+[   
+    {
+        "title": "Un trou noir énorme dans la Voie lactée " ,
+        "ecriture": "25-01-2019", 
+        "categorie": "objets du ciel",           
+        "content": "Un trou noir de 68 masses solaires a été observé à environ 15 000 années-lumière de la Terre. Cela confirme l’existence d’une population de trous noirs dont la masse dépasse celle des trous noirs stellaires. Mais ces objets ne seraient pas forcément issus de fusions de trous noirs plus petits. ",
+        "comments": [
+                        { "text":"Et si on allait faire une petite visite...",
+                          "author": "Cosmos"  
+                        },
+                        { "text":"Deuxième commentaire pas très long et pas intéressant",
+                          "author": "Blue planet"  
+                          }
+                    ]
+    },
+
+    {
+        "title": "Découverte : des sucres extraterrestres détectés dans les météorites ",  
+        "ecriture": "01-12-2019",
+        "categorie": "biologie",          
+        "content": "Des sucres, ingrédients à la base de la vie, ont été trouvés dans des météorites primitives — dont le ribose, constituant de l’ARN. Cette découverte renforce la théorie selon laquelle comètes et astéroïdes ont ensemencé la Terre. Un résultat prédit depuis plusieurs années par des chercheurs français.",
+        "comments": [
+                        { "text":"blablabla",
+                          "author": "Bloody cloud"  
+                        },
+                        { "text":"blablabla",
+                            "author": "Bloody cloud"  
+                        }
+                    ]
+    },
+
+    {
+        "title":"Le film de la désintégration d’un astéroïde  ",
+        "ecriture":"08-12-2019",
+        "categorie": "objets du ciel",
+        "content":"Sous l’œil des plus grands télescopes de la planète, la comète P/2016 G1 s’est totalement volatilisée, comme le montre une animation montrant l’évolution de l’objet sur plusieurs mois. Ce cas atypique est en réalité le fait de la collision de deux astéroïdes entre eux.",
+        "comments": []
+        
+    }
+]
+ 
