@@ -10,7 +10,7 @@ $(document).ready(function(){
                 $("#card" + i).append("<h2 id='title" + i + "'></h2>");
                 $("#card" + i).append("<small id='small" + i + "'></small>");
                 $("#card" + i).append("<p id='content" + i + "'></p>");
-                $("#card" + i).append("<a href='#rep" + i + "' rel='modal:open'>Reply</a><br/>");
+                $("#card" + i).append("<a href='" + i + "' rel='modal:open' id='reply'>Reply</a><br/>");
                 $("#card" + i).append("<small id='commentNbr" + i + "'>Comments : 0</small><hr/>");
                 $(".modals").append("<div id='rep" + i + "' class='modal'><form id='response" + i + "'><label for='comment'>Comment from:</label><textarea name='comment' placeholder='Enter your comment!' cols='50' rows='7'></textarea><input class='button' id='submit" + i + "'type='button' name='submit' value='submit'></form><a href='#' rel='modal:close'>Close</a>");
                    
@@ -24,8 +24,7 @@ $(document).ready(function(){
                     for(var j = 0; j < commentArr ; j++ ){
                         var author = obj["comments"][j]["author"];
                         var texte = obj["comments"][j]["text"];
-                        console.log(commentArr);
-
+                        
                         $("#card" + i).append("<div class='oneComment'><p class='authorBold'>From: " + author + "</p><p class='oneText'>" + texte + "</p></div><hr/>");
                         $("#commentNbr" + i ).text("Comments: " + commentArr);
                     }                    
@@ -34,7 +33,25 @@ $(document).ready(function(){
                  
             }
          
-        });    
+        });
+
+        $("#closeError").click(function(){
+            $(".error").hide(400);
+           
+        })
+
+        var hidden = $("div").hasClass("hidden");
+        console.log(hidden);
+        if(hidden){
+            var hiddenVal = $("#role").html();
+            if(hiddenVal === 1){
+                $("#reply").attr("href","#rep")
+            }
+        }
+
+
+        
+
     });
 
     

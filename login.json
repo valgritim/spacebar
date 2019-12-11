@@ -1,13 +1,1 @@
-[
-    {
-        "email": "valgritim@gmail.com",
-        "mdp": "Gribouille",
-        "role": 3
-    },
-    {
-        "email": "valerie@gmail.com",
-        "mdp": "Timy",
-        "role": 1
-    }
-
-]
+[{"email":"valgritim@gmail.com","mdp":"gribouille","role":3},{"email":"valerie@gmail.com","mdp":"Timy","role":1},{"email":"valerie.baron67@gmail.com","mdp":"mdp","role":1},{"email":"benjamin@gmail.com","mdp":"spitou","role":1},{"email":"vick@gmail.com","mdp":"vick","role":1}]

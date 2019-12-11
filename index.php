@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    if(!empty($_SESSION['error'])){
+        echo "<div class='error'><span>" . $_SESSION['error'] . "</span>
+               <button id='closeError'>X</button>
+        </div>";
+        
+    } 
+    if(!empty($_SESSION['user']) && !empty($_SESSION['role'])){
+            echo"<div id='role' class='hidden'>" . $_SESSION['role'] ."</div>";
+            
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +34,7 @@
             
             <ul>
                 <li><i class="far fa-newspaper"></i> News Categories</li>
-                <li><i class="fas fa-user"></i> Register</li>
+                <li><i class="fas fa-user"></i><a href="#register" rel="modal:open"> Register</li>
                 <li><i class="fas fa-sign-in-alt"></i><a href="#ex1" rel="modal:open"> Login</a></li>
             </ul>            
         </nav>
@@ -57,12 +70,24 @@
         <div id="ex1" class="modal">
             <h3 class="loginForm">Login form</h3>
             <hr>
-            <form action="#" id="login">
+            <form action="traitLogin.php" method="post" id="login">
                 <label for="user">Username</label>
-                <input type="text" id="user" name="user" placeholder="enter your username"><br><br>
+                <input type="email" id="user" name="user" placeholder="enter your email" required><br><br>
                 <label for="pwd">Password</label>
-                <input type="text" id="pwd" name="pwd" placeholder="enter your password">
-                <input type="button" id="button" value="Take-off !">
+                <input type="text" id="pwd" name="pwd" placeholder="enter your password" required>
+                <input type="submit" id="button" name="submit" value="Take-off !">
+            </form>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+        <div id="register" class="modal">
+            <h3 class="loginForm">Register now!</h3>
+            <hr>
+            <form action="traitRegister.php" method="post" id="login">
+                <label for="user1">Email</label>
+                <input type="email" id="user1" name="user" placeholder="enter an email" required><br><br>
+                <label for="pwd">Password</label>
+                <input type="text" id="pwd" name="pwd" placeholder="enter a password" required>
+                <input type="submit" id="button" name="submit" value="Ignition!">
             </form>
             <a href="#" rel="modal:close">Close</a>
         </div>

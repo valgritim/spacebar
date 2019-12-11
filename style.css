@@ -10,6 +10,17 @@ body{
     padding-top:150px;
     text-align: center;
 }
+.error{
+    background-color: #ffb3b3;
+    height: 50px;
+    text-align: center;
+}
+#closeError{
+    padding:5px;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color: grey;
+}
 /*Navbar*/
 nav{
     display:flex;
@@ -47,6 +58,10 @@ hr{
     background-image: url("images/city.jpg");
     height:500px;    
 }
+#role{
+    display: none;
+}
+
 /*Section news*/
 
 #news{
@@ -137,6 +152,9 @@ hr{
     margin-top:30px;
     margin-left: 150px;
     width: 30% !important;
+}
+#user1{
+    margin-left: 30px;
 }
 /*Formulaire de commentaire*/
 [id^="response"]{
